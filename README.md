@@ -48,8 +48,6 @@
 **PAENDIENTE**
 
 ## Authors
-<a href = 'https://www.github.com/Crisgrva'> <img width = '32px' align= 'center' src="https://raw.githubusercontent.com/rahulbanerjee26/githubAboutMeGenerator/main/icons/github.svg"/></a> 
-[@carlosberrio](https://github.com/carlosberrio) | [@santiagobedoa](https://github.com/santiagobedoa)
+<a href = 'https://www.github.com/Crisgrva'> <img width = '32px' align= 'center' src="https://raw.githubusercontent.com/rahulbanerjee26/githubAboutMeGenerator/main/icons/github.svg"/></a> [@carlosberrio](https://github.com/carlosberrio) | [@santiagobedoa](https://github.com/santiagobedoa)
 
-<a href = 'https://www.twitter.com/crisgrvc'> <img width = '32px' align= 'center' src="https://raw.githubusercontent.com/rahulbanerjee26/githubAboutMeGenerator/main/icons/twitter.svg"/></a>
-[@Carlosberro6](https://twitter.com/carlosberro6) | [@santiagobedoa](https://twitter.com/santiagobedoa)
+<a href = 'https://www.twitter.com/crisgrvc'> <img width = '32px' align= 'center' src="https://raw.githubusercontent.com/rahulbanerjee26/githubAboutMeGenerator/main/icons/twitter.svg"/></a> [@Carlosberro6](https://twitter.com/carlosberro6) | [@santiagobedoa](https://twitter.com/santiagobedoa)

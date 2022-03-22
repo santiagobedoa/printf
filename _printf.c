@@ -23,7 +23,19 @@ int _printf(const char *format, ...)
 			if (func != NULL)
 			{
 				len_format = func(ap);
+				i += 2;
+				continue;
 			}
+		}
+		/* if format[i] == \ */
+		else if (format[i] == 92)
+		{
+			putchar('\n');
+			break;
+		}
+		else if (format[i] != '\0')
+		{
+			putchar(format[i]);
 		}
 		i++;
 	}

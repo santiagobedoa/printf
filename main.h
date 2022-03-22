@@ -19,6 +19,12 @@ int print_string(va_list);
 
 
 /* STRUCTURES */
+
+/**
+ * struct functions - hashmap structure
+ * @type: argument type specified by %
+ * @function: function that perfome with the specified argument
+ */
 typedef struct functions
 {
 	char *type;
