@@ -1,7 +1,10 @@
 #include "main.h"
 
 /**
+ * get_op_func - get function that match with the char after %
+ * @format: format to by mapped in the type structure
  *
+ * Return: function pointer that points to the desire function
  */
 int (*get_op_func(const char *format))(va_list arg)
 {

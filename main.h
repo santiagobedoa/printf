@@ -14,7 +14,8 @@ int _printf(const char *format, ...);
 int (*get_op_func(const char *format))(va_list);
 
 /* PRINTF FUNCTION TYPES */
-int _printf_char(va_list);
+int print_char(va_list);
+int print_string(va_list);
 
 
 /* STRUCTURES */
@@ -25,7 +26,8 @@ typedef struct functions
 } functions_t;
 
 static const functions_t types[] = {
-	{"c", _printf_char},
+	{"c", print_char},
+	{"s", print_string},
 	{NULL, NULL}
 };
 
