@@ -11,7 +11,7 @@ int _printf(const char *format, ...)
 	va_list ap;
 	int (*func)(va_list);
 	int i = 0;
-	int len_format;
+	int len_arg;
 
 	va_start(ap, format);
 
@@ -22,7 +22,7 @@ int _printf(const char *format, ...)
 			func = get_op_func(&format[i]);
 			if (func != NULL)
 			{
-				len_format = func(ap);
+				len_arg += func(ap);
 				i += 2;
 				continue;
 			}
@@ -36,10 +36,11 @@ int _printf(const char *format, ...)
 		else if (format[i] != '\0')
 		{
 			putchar(format[i]);
+			len_arg++;
 		}
 		i++;
 	}
 	va_end(ap);
-	return (len_format);
+	return (len_arg);
 }
 
