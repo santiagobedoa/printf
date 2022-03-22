@@ -8,11 +8,11 @@
  */
 int print_char(va_list c)
 {
-	int character = va_arg(c, int);
+        int character = va_arg(c, int);
 
-	putchar(character);
+        putchar(character);
 
-	return (1);
+        return (1);
 }
 
 /**
@@ -23,12 +23,12 @@ int print_char(va_list c)
  */
 int print_string(va_list s)
 {
-	int i = 0;
-	char *str = va_arg(s, char *);
+        int i = 0;
+        char *str = va_arg(s, char *);
 
-	for (; str[i] != '\0'; i++)
-	{
-		putchar(str[i]);
-	}
-	return (strlen(str));
+        for (; str[i] != '\0'; i++)
+        {
+                putchar(str[i]);
+        }
+        return (strlen(str));
 }
