@@ -20,7 +20,12 @@ int _printf(const char *format, ...)
 	va_start(ap, format);
 	while (format[i])
 	{
-		if (format[i] == '%' && format[i + 1] == '%')
+		if (format[i] == '%' && format[i + 1] == '\0')
+		{
+			_putchar(format[i]);
+			return (-1);
+		}
+		else if (format[i] == '%' && format[i + 1] == '%')
 		{
 			_putchar('%');
 			len_arg++;
