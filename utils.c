@@ -16,7 +16,7 @@ char *reverse_str(char *str)
 	{
 		return (NULL);
 	}
-	len = strlen(str);
+	len = _strlen(str);
 	for (; i < (len / 2); i++)
 	{
 		tmp = str[i];

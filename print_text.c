@@ -30,5 +30,5 @@ int print_string(va_list s)
 	{
 		_putchar(str[i]);
 	}
-	return (strlen(str));
+	return (_strlen(str));
 }
