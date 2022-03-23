@@ -17,7 +17,7 @@ int print_decimal(va_list d)
 		_putchar(buffer[i]);
 	}
 	/* return buffer (space in memory) - NULL byte (at the end of the str) */
-	return (_strlen(buffer) - 1);
+	return (_strlen(buffer));
 }
 
 /**
@@ -37,5 +37,5 @@ int print_integer(va_list integer)
 		_putchar(buffer[i]);
 	}
 	/* return buffer - NULL byte */
-	return (_strlen(buffer) - 1);
+	return (_strlen(buffer));
 }
