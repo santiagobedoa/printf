@@ -24,12 +24,6 @@ int _printf(const char *format, ...)
 		{
 			return (-1);
 		}
-		else if (format[i] == '%' && format[i + 1] == '!')
-		{
-			_putchar('%');
-			_putchar('!');
-			return (3);
-		}
 		else if (format[i] == '%' && format[i + 1] == '%')
 		{
 			_putchar('%');
@@ -49,6 +43,11 @@ int _printf(const char *format, ...)
 			else
 			{
 				if (format[i] == '%' && format[i + 1] == '\0')
+				{
+					len_arg++;
+					_putchar(format[i]);
+				}
+				else
 				{
 					len_arg++;
 					_putchar(format[i]);
