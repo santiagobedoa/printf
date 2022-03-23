@@ -51,10 +51,6 @@ char *int_to_arg(int i, char *buffer, int base)
 		if (digit >= 0 && digit <= 9)
 		{
 			*str = '0' + digit;
-			if (i / base == 0)
-			{
-				break;
-			}
 		}
 		i = i / base;
 		str++;
