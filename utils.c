@@ -8,22 +8,22 @@
  */
 char *reverse_str(char *str)
 {
-        int i = 0;
-        int len = 0;
-        char tmp;
+	int i = 0;
+	int len = 0;
+	char tmp;
 
-        if (str == NULL)
-        {
-                return (NULL);
-        }
-        len = strlen(str);
-        for (; i < (len / 2); i++)
-        {
-                tmp = str[i];
-                str[i] = str[len - i - 1];
-                str[len - i - 1] = tmp;
-        }
-        return (str);
+	if (str == NULL)
+	{
+		return (NULL);
+	}
+	len = strlen(str);
+	for (; i < (len / 2); i++)
+	{
+		tmp = str[i];
+		str[i] = str[len - i - 1];
+		str[len - i - 1] = tmp;
+	}
+	return (str);
 }
 
 /**
@@ -36,30 +36,30 @@ char *reverse_str(char *str)
  */
 char *int_to_arg(int i, char *buffer, int base)
 {
-        char *str = buffer;
-        int digit;
-        int negative = 0;
+	char *str = buffer;
+	int digit;
+	int negative = 0;
 
-        if (i < 0)
-        {
-                negative = 1;
-                i *= -1;
-        }
-        while (i)
-        {
-                digit = i % base;
-                if (digit >= 0 && digit <= 9)
-                {
-                        *str = '0' + digit;
-                }
-                i = i / base;
-                str++;
-        }
-        if (negative)
-        {
-                *str++ = '-';
-        }
-        *str = '\0';
-        reverse_str(buffer);
-        return (buffer);
+	if (i < 0)
+	{
+		negative = 1;
+		i *= -1;
+	}
+	while (i)
+	{
+		digit = i % base;
+		if (digit >= 0 && digit <= 9)
+		{
+			*str = '0' + digit;
+		}
+		i = i / base;
+		str++;
+	}
+	if (negative)
+	{
+		*str++ = '-';
+	}
+	*str = '\0';
+	reverse_str(buffer);
+	return (buffer);
 }

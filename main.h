@@ -20,6 +20,9 @@ int print_char(va_list);
 int print_string(va_list);
 /* PRINT NUMBERS */
 int print_decimal(va_list);
+int print_integer(va_list);
+
+/* AUX FUNCTION */
 char *int_to_arg(int i, char *strout, int base);
 
 /* STRUCTURES */
@@ -39,6 +42,7 @@ static const functions_t types[] = {
         {"c", print_char},
         {"s", print_string},
         {"d", print_decimal},
+	{"i", print_integer},
         {NULL, NULL}
 };
 
