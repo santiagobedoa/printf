@@ -16,10 +16,6 @@ int print_decimal(va_list d)
 	{
 		_putchar(buffer[i]);
 	}
-	if (i == 0)
-	{
-		return (1);
-	}
 	return (_strlen(buffer));
 }
 
