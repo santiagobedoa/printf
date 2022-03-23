@@ -1,0 +1,84 @@
+.TH man 3 "23 march 2022" "0.10" "_printf man page"
+.SH NAME
+.B _printf
+- Formatted output conversion.
+.SH SYNOPSIS
+.B #include "holberton.h"
+
+.SH NAME
+_printf() - takes input and prints to standard output.
+
+.SH SYNOPSIS
+#include "holberton.h"
+
+.SH Sintaxis
+int _printf(const char *format, ...)
+
+.SH format
+This is the string that contains the text to be written to stdout. 
+#include <stdarg.h>
+
+.SH DESCRIPTION
+The function _printf() sends formatted output to stdout and uses format
+specifiers to convert arguments into strings. The format specifiers are:
+FORMAT outputs a specified format relative to the specifier input.
+
+.SH Return Value
+_printf() function returns the number of characters printed (excluding the null byte used to end output to strings).
+
+A character that specifies the type of conversion to be applied. The conversion specifiers and their meanings are:
+.TP
+.BR c
+The int argument is converted to an unsigned char, then the resulting character is written
+.TP
+.B s
+The const char * argument is expected to be a pointer to an array of character type (pointer to a string). Characters from the array are written up to a terminating null byte, but do ot include the terminating null byte.
+.TP
+.B S
+Prints a string. Non printable characters are printed as "\x" followed by their ASCII values in two digit hexadecimal
+.TP
+.B d, i
+The int argument is converted to signed decimal notation.
+.TP
+.B x, X
+The unsigned int argument is converted to unsigned lowercase hexadecimal notation(x), or unsigned uppercase hexadecimal notation(X).
+.TP
+.B u
+The unsigned int argument is converted to unsigned decimal notation
+.TP
+.B o, b
+The unsigned int argument is converted to unsigned octal notation(o) or binary notation(b).
+.TP
+.B p
+Address is printed in hexadecimal.
+.TP
+.B r
+Prints a string in reverse.
+.TP
+.B R
+Prints a string converted to rot13
+.TP
+.B %
+A '%' is written but no argument is converted. The complete version specification is '%%'
+.SH EXAMPLE
+Many countries use the day-month-year order.  Hence, an
+internationalized version must be able to print the arguments in
+an order specified by the format:
+
+#include <stdio.h>
+printf(stdout, format,
+weekday, month, day, hour, min);
+
+where format depends on locale, and may permute the arguments.
+With the value:
+
+"%1$s, %3$d. %2$s, %4$d:%5$.2d\n"
+
+one might obtain "Sonntag, 3. Juli, 10:02".
+
+.SH SEE ALSO
+.I printf(3)
+.SH BUGS
+No known bugs.
+.SH AUTHOR
+Santiago Bedoya, Carlos Berrio
