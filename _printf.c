@@ -12,17 +12,26 @@ int _printf(const char *format, ...)
 	int (*func)(va_list);
 	int i = 0;
 	int len_arg = 0;
-	int edge_cases = 0;
 
-	va_start(ap, format);
-	edge_cases = edge_cases_finder(format);
-	if (edge_cases != 0)
+	if (format == NULL)
 	{
-		return (edge_cases);
+		return (-1);
 	}
+	va_start(ap, format);
 	while (format[i])
 	{
-		if (format[i] == '%')
+		if (format[i] == '%' && format[i + 1] == '\0')
+		{
+			return (-1);
+		}
+		else if (format[i] == '%' && format[i + 1] == '%')
+		{
+			_putchar('%');
+			len_arg++;
+			i += 2;
+			continue;
+		}
+		else if (format[i] == '%')
 		{
 			func = get_op_func(&format[i]);
 			if (func != NULL)
@@ -50,6 +59,11 @@ int _printf(const char *format, ...)
 		{
 			_putchar('\n');
 			break;
+		}
+		else if (format[i] != '\0')
+		{
+			_putchar(format[i]);
+			len_arg++;
 		}
 		i++;
 	}

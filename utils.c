@@ -1,6 +1,36 @@
 #include "main.h"
 
 /**
+ * _putchar - writes the character c to stdout
+ * @c: The character to be printed
+ *
+ * Return: On success 1 otherwise return -1.
+ */
+int _putchar(char c)
+{
+        return (write(1, &c, 1));
+}
+
+/**
+ * _strlen - function that returns the length of a string
+ * @s: string to be processed
+ * 
+ * Return: length of the string
+ */
+int _strlen(char *s)
+{
+        int length;
+        int i;
+
+        length = 0;
+
+        for (i = 0; s[i] != '\0'; i++)
+                length++;
+
+        return (length);
+}
+
+/**
  * reverse_str - function that reverse a string
  * @str: string to be reversed
  *

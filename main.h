@@ -13,9 +13,6 @@
 int _printf(const char *format, ...);
 int (*get_op_func(const char *format))(va_list);
 
-/* EDGE CASES */
-int edge_cases_finder(const char *format);
-
 /* PRINT FUNCTION TYPES */
 
 /* PRINT TEXT */
