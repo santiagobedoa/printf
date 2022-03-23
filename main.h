@@ -46,4 +46,4 @@ static const functions_t types[] = {
         {NULL, NULL}
 };
 
-#endif
+#endif /* MAIN_C */
