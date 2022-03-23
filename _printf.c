@@ -28,9 +28,6 @@ int _printf(const char *format, ...)
 		{
 			_putchar('%');
 			_putchar('!');
-			_putchar('\n');
-			_putchar('%');
-			_putchar('!');
 			return (3);
 		}
 		else if (format[i] == '%' && format[i + 1] == '%')
