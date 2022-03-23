@@ -6,7 +6,7 @@
  * @edge: valist
  * Return: Error -1 or 0
  */
-int edge_cases_finder(const char *format, va_list edge)
+int edge_cases_finder(const char *format)
 {
 	if (format == NULL)
 	{

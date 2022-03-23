@@ -15,7 +15,7 @@ int _printf(const char *format, ...)
 	int edge_cases = 0;
 
 	va_start(ap, format);
-	edge_cases = edge_cases_finder(format, ap);
+	edge_cases = edge_cases_finder(format);
 	if (edge_cases != 0)
 	{
 		return (edge_cases);
