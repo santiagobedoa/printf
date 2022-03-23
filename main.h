@@ -24,6 +24,7 @@ int print_integer(va_list);
 
 /* AUX FUNCTION */
 char *int_to_arg(int i, char *strout, int base);
+int _putchar(char c);
 
 /* STRUCTURES */
 

@@ -18,7 +18,7 @@ int _printf(const char *format, ...)
 	{
 		if (format[i] == '%' && format[i + 1] == '%')
 		{
-			putchar('%');
+			_putchar('%');
 			len_arg++;
 			i += 2;
 			continue;
@@ -37,19 +37,19 @@ int _printf(const char *format, ...)
 				if (format[i] == '%' && format[i + 1] == '\0')
 				{
 					len_arg++;
-					putchar(format[i]);
+					_putchar(format[i]);
 				}
 			}
 		}
 		/* if format[i] == \n */
 		else if (format[i] == 92 && format[i + 1] == 110)
 		{
-			putchar('\n');
+			_putchar('\n');
 			break;
 		}
 		else if (format[i] != '\0')
 		{
-			putchar(format[i]);
+			_putchar(format[i]);
 			len_arg++;
 		}
 		i++;

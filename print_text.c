@@ -10,7 +10,7 @@ int print_char(va_list c)
 {
 	int character = va_arg(c, int);
 
-	putchar(character);
+	_putchar(character);
 
 	return (1);
 }
@@ -28,7 +28,7 @@ int print_string(va_list s)
 
 	for (; str[i] != '\0'; i++)
 	{
-		putchar(str[i]);
+		_putchar(str[i]);
 	}
 	return (strlen(str));
 }

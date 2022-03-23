@@ -14,7 +14,7 @@ int print_decimal(va_list d)
 	int_to_arg(va_arg(d, int), buffer, 10);
 	for (; buffer[i] != '\0'; i++)
 	{
-		putchar(buffer[i]);
+		_putchar(buffer[i]);
 	}
 	/* return buffer (space in memory) - NULL byte (at the end of the str) */
 	return (strlen(buffer) - 1);
@@ -34,7 +34,7 @@ int print_integer(va_list integer)
 	int_to_arg(va_arg(integer, int), buffer, 10);
 	for (; buffer[i] != '\0'; i++)
 	{
-		putchar(buffer[i]);
+		_putchar(buffer[i]);
 	}
 	/* return buffer - NULL byte */
 	return (strlen(buffer) - 1);
