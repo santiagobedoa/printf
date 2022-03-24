@@ -1,9 +1,14 @@
+![] (https://github.com/santiagobedoa/printf/blob/master/images/header_img.jpg)
+
 # _printf
 ```_printf``` is a custom implementation of the C programming function ```printf```. This project is an application of the C programming knowledge that [Holberton School](https://www.holbertonschool.com/) cohort 17 students have learned.
 
-**Prototype:** ```int _printf(const char *format, ...);```
+**Prototype:** 
+
+> int _printf(const char *format, ...);
 
 ## Examples
+
 **String**
 * Input: ```_printf("%s\n", 'Hello world!');```
 * Output: ```Hello world!```
@@ -20,12 +25,24 @@
 * Input: ```_printf("%d\n", 1000);```
 * Output:  ```1000```
 
+## How this work:
+
+If you want to read a short manual, to search specific commands, how they works, flags, accepted parameters, qualities, and other topics, please reffer to this manual man_3_printf!
+
+Just type in the console:
+> man - l man_3_printf
+This man page comes thanks to the pandoc program.
+
 ## Project Requirements
+
 ### General
+
 * All files will be compiled on Ubuntu 20.04 LTS
 * Your code should use the Betty style. It will be checked using [betty-style.pl](https://github.com/holbertonschool/Betty/blob/master/betty-style.pl) and [betty-doc.pl](https://github.com/holbertonschool/Betty/blob/master/betty-doc.pl)
 * Global variables are not allowed
+
 ### Authorized functions and macros:
+
   * ```write``` (man 2 write)
   * ```malloc``` (man 3 malloc)
   * ```free``` (man 3 free)
@@ -33,10 +50,27 @@
   * ```va_end``` (man 3 va_end)
   * ```va_copy``` (man 3 va_copy)
   * ```va_arg``` (man 3 va_arg)
+
+## Functions:
+
+- [ ] Type char
+- [ ] Type string
+- [ ] Type percent
+- [ ] Type decimal, base 10
+- [ ] Type integer, base 10
+- [ ] Type binary
+- [ ] Type unsigned decimal, base 10
+- [ ] Type octal
+- [ ] Type hexadecimal, base 16
+- [ ] Type reverse string
+- [ ] Type Rot13
+
 ### Compilation
-```gcc -Wall -Werror -Wextra -pedantic -std=gnu89 *.c```
+
+> gcc -Wall -Werror -Wextra -pedantic -std=gnu89 *.c
 
 ## Mandatory Tasks
+
 - [] Write function that produces output with conversion specifiers ```c```, ```s```, and ```%``` and **Returns** the number of characters printed (excluding the null byte used to end output to strings).
 - [] Handle conversion specifiers ```d```, ```i```.
 - [] Create a man page for your function.
@@ -44,8 +78,51 @@
 ## Advanced Tasks
 **PENDIENTE**
 
+## Table of functions, symbols and description:
+
+| Function  | Symbol  | Description |
+| :------ |:--------------:| ---------------------:|
+| `printf_s`      | %s | Prints a string |
+| `printf_c`      | %c  |   Prints a character |
+| `printf_d`   | %d   |   Prints in decimal format |
+| `printf_i`      |%i  |   Prints a integer |
+| `printf_per`      | %per |   Prints in percentage format |
+| `printf_bin`     | %bin |   Prints in binary type |
+| `printf_o`      | %o |   Prints in octal type |
+| `printf_x`      | %x |   Prints in hexadecimal format |
+| `printf_u`     | %u |   Prints in unsigned decimal format |
+| `printf_R`     | %R |   Prints in ROT13 format |
+| `printf_r`     | %r |   Prints a string in reverse |
+
+
 ## Files Description
-**PAENDIENTE**
+
+Here are the sub-functions to have an adequate behavior according to the requirements of the main function.
+##### Putchar:
+Write a digit, using the write function (<unistd.h>).
+> int _putchar(char c);
+##### Strlen:
+Measures the length of a string
+> int _strlen(char *s);
+##### Integer to argument:
+Convert integers to strings
+> char *_int_to_arg(int i, char *strout, int base);
+##### Print-Rev-Recursion:
+Prints a string in reverse
+> void _print_rev_recursion(char *s);
+
+
+## How this work:
+
+First of all, if you want and need a Manual, to look at the specific commands, how they work, their flags, accepted parameters, qualities, and everything else you need, of course we have our own man _printf!
+
+Just type in the console:
+> man ./man_3_printf
+
+
+### FlowChart
+Image:
+PENDIENTE!!!!!!
 
 ## Authors
 <a href = 'https://www.github.com/Crisgrva'> <img width = '32px' align= 'center' src="https://raw.githubusercontent.com/rahulbanerjee26/githubAboutMeGenerator/main/icons/github.svg"/></a> [@carlosberrio](https://github.com/carlosberrio) | [@santiagobedoa](https://github.com/santiagobedoa)
