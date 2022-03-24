@@ -60,3 +60,36 @@ int print_rev_str(va_list args)
 	}
 	return (len);
 }
+
+/**
+ * print_rot13 - encodes a string in rot13
+ * @s: string to be encoded
+ *
+ * Return: length of the encoded string
+ */
+int print_rot13(va_list s)
+{
+	int i, j;
+	char input[] = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ";
+	char output[] = "nopqrstuvwxyzabcdefghijklmNOPQRSTUVWXYZABCDEFGHIJKLM";
+	char *str = va_arg(s, char *);
+
+	for (i = 0; str[i]; i++)
+	{
+		if (str[i] < 'A' || (str[i] > 'Z' && str[i] < 'a') || str[i] > 'z')
+		{
+			_putchar(str[i]);
+		}
+		else
+		{
+			for (j = 0; j <= _strlen(input); j++)
+			{
+				if (str[i] == input[j])
+				{
+					_putchar(output[j]);
+				}
+			}
+		}
+	}
+	return (i);
+}

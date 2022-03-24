@@ -20,6 +20,7 @@ int (*get_op_func(const char *format))(va_list);
 int print_char(va_list);
 int print_string(va_list);
 int print_rev_str(va_list);
+int print_rot13(va_list);
 /* PRINT NUMBERS */
 int print_decimal(va_list);
 
@@ -49,6 +50,7 @@ static const functions_t types[] = {
 	{"d", print_decimal},
 	{"i", print_decimal},
 	{"r", print_rev_str},
+	{"R", print_rot13},
 	{NULL, NULL}
 };
 
