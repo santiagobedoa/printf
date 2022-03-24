@@ -37,3 +37,26 @@ int print_string(va_list s)
 	}
 	return (_strlen(str));
 }
+
+/**
+ * reverse_str - function that reverse a string
+ * @str: string to be reversed
+ *
+ * Return: reversed string
+ */
+int print_rev_str(va_list args)
+{
+	int h, len;
+	char *str = va_arg(args, char *);
+
+	if (!str)
+	{
+		str = "(null)";
+	}
+	len = _strlen(str);
+	for (h = len - 1; h >= 0; h--)
+	{
+		_putchar(str[h]);
+	}
+	return (len);
+}

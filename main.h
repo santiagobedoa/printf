@@ -19,6 +19,7 @@ int (*get_op_func(const char *format))(va_list);
 /* PRINT TEXT */
 int print_char(va_list);
 int print_string(va_list);
+int print_rev_str(va_list);
 /* PRINT NUMBERS */
 int print_decimal(va_list);
 
@@ -38,16 +39,17 @@ int _intlen(int i);
  */
 typedef struct functions
 {
-        char *type;
-        int (*function)(va_list);
+	char *type;
+	int (*function)(va_list);
 } functions_t;
 
 static const functions_t types[] = {
-        {"c", print_char},
-        {"s", print_string},
-        {"d", print_decimal},
+	{"c", print_char},
+	{"s", print_string},
+	{"d", print_decimal},
 	{"i", print_decimal},
-        {NULL, NULL}
+	{"r", print_rev_str},
+	{NULL, NULL}
 };
 
 #endif /* MAIN_C */
