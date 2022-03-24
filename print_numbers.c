@@ -11,10 +11,6 @@ int print_decimal(va_list d)
 	int i = 0;
 	char buffer[1024];
 
-	if (va_arg(d, int) == INT_MIN)
-	{
-		return (11);
-	}
 	int_to_arg(va_arg(d, int), buffer, 10);
 	for (; buffer[i] != '\0'; i++)
 	{
@@ -34,10 +30,6 @@ int print_integer(va_list integer)
 	int i = 0;
 	char buffer[1024];
 	
-	if (va_arg(d, int) == INT_MIN)
-	{
-		return (11);
-	}
 	int_to_arg(va_arg(integer, int), buffer, 10);
 	for (; buffer[i] != '\0'; i++)
 	{
