@@ -45,7 +45,7 @@ static const functions_t types[] = {
         {"c", print_char},
         {"s", print_string},
         {"d", print_decimal},
-	{"i", print_integer},
+	{"i", print_decimal},
         {NULL, NULL}
 };
 
