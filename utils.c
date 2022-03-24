@@ -75,6 +75,12 @@ char *int_to_arg(int i, char *buffer, int base)
 		negative = 1;
 		i *= -1;
 	}
+	else if (i == 0)
+	{
+		*str = 48;
+		*(str + 1) = '\0';
+		return (buffer);
+	}
 	while (i)
 	{
 		digit = i % base;
