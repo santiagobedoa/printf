@@ -1,19 +1,18 @@
 #include "main.h"
 
 /**
- * print_integer - print unsigned integer
- * @integer: unsigned integer to be printed
+ * print_decimal - function that prints an integer and return its length
+ * @i: integer to be printed
  *
  * Return: length of i
  */
-int print_decimal(va_list args)
+int print_decimal(va_list i)
 {
-	int num = va_arg(args, int);
-	int sum = _intlen(num);
+	int num = va_arg(i, int);
+	int len = _intlen(num);
 
 	if (num <= 0)
-	sum++;
+	len++;
 		_putnum(num);
-	return (sum);
+	return (len);
 }
-
