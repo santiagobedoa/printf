@@ -12,6 +12,29 @@ int _putchar(char c)
 }
 
 /**
+ *
+ */
+void _putnum(int n)
+{
+	unsigned int num;
+
+	if (n < 0)
+	{
+		_putchar('-');
+		num = n * -1;
+	}
+	else
+	{
+		num = n;
+	}
+	if (num / 10)
+	{
+		_putnum(num / 10);
+	}
+	_putchar((num % 10) + '0');
+}
+
+/**
  * _strlen - function that returns the length of a string
  * @s: string to be processed
  *
@@ -28,6 +51,33 @@ int _strlen(char *s)
 		length++;
 
 	return (length);
+}
+
+/**
+ * _intlen - function that returns the length of a int
+ * @i: integer to be processed
+ *
+ * Return: length of the int
+ */
+int _intlen(int i)
+{
+	int len = 0;
+	unsigned int integer;
+
+	if (i < 0)
+	{
+		integer = i * -1;
+	}
+	else
+	{
+		integer = i;
+	}
+	while (integer != 0)
+	{
+		integer /= 10;
+		len++;
+	}
+	return (len);
 }
 
 /**

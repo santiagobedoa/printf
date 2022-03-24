@@ -21,12 +21,13 @@ int print_char(va_list);
 int print_string(va_list);
 /* PRINT NUMBERS */
 int print_decimal(va_list);
-int print_integer(va_list);
 
 /* AUX FUNCTION */
 char *int_to_arg(int i, char *strout, int base);
 int _putchar(char c);
+void _putnum(int n);
 int _strlen(char *s);
+int _intlen(int i);
 
 /* STRUCTURES */
 
