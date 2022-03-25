@@ -59,12 +59,8 @@ This man page comes thanks to the pandoc program.
 - [x] Type percent
 - [x] Type decimal, base 10
 - [x] Type integer, base 10
-- [ ] Type binary
-- [ ] Type unsigned decimal, base 10
-- [ ] Type octal
-- [ ] Type hexadecimal, base 16
-- [ ] Type reverse string
-- [ ] Type Rot13
+- [x] Type reverse string
+- [x] Type Rot13
 
 ### Compilation
 
