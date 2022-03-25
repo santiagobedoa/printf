@@ -96,9 +96,10 @@ This man page comes thanks to the pandoc program.
 | `printf_r`     | %r |   Prints a string in reverse |
 
 
-### FlowChart
-Image:
-PENDIENTE!!!!!!
+## FlowChart
+
+![plot](images/printf_FLOW_CHART.jpg)
+
 
 ## Authors
 <a href = 'https://www.github.com/Crisgrva'> <img width = '32px' align= 'center' src="https://raw.githubusercontent.com/rahulbanerjee26/githubAboutMeGenerator/main/icons/github.svg"/></a> [@carlosberrio](https://github.com/carlosberrio) | [@santiagobedoa](https://github.com/santiagobedoa)
