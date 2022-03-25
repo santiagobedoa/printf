@@ -3,34 +3,63 @@
 # _printf 👋
 ```_printf``` is a custom implementation of the C programming function ```printf```. This project is an application of the C programming knowledge that [Holberton School](https://www.holbertonschool.com/) cohort 17 students have learned.
 
-**Prototype:** 
+**Prototype:**
 
-> int _printf(const char *format, ...);
+``` int _printf(const char *format, ...); ```
 
 ## Examples
 
-**String**
-* Input: ```_printf("%s\n", 'Hello world!');```
-* Output: ```Hello world!```
+###String
+* **Input:**
+```
+int main (void)
+{
+	_printf("%s\n", 'Hello world!');
+}
+```
+* **Output:**
+> Hello world!
 
-**Character**
-* Input: ```_printf("The first letter in "Hello world!" is %c\n", 'H');```
-* Output: ```The first letter in "Hello world" is H```
+###Character
+* **Input:**
+```
+int main (void)
+{
+	_printf("The first letter in "Hello world!" is %c\n", 'H');
+}
+```
+* **Output:**
+> The first letter in "Hello world" is H
 
-**Integer**
-* Input: ```_printf("There are %i minutes in an hour\n", 60);```
-* Output: ```There are 60 minutes in an hour```
+###Integer
+* **Input:**
+```
+int main (void)
+{
+	_printf("There are %i minutes in an hour\n", 60);
+}
+```
+* **Output:**
+> There are 60 minutes in an hour
 
-**Decimal:**
-* Input: ```_printf("%d\n", 1000);```
-* Output:  ```1000```
+###Decimal
+* **Input:**
+```
+int main (void)
+{
+	_printf("%d\n", 1000);
+}
+```
+* **Output:**
+> 1000
 
 ## How this work:
 
 If you want to read a short manual, to search specific commands, how they works, flags, accepted parameters, qualities, and other topics, please refer to this manual man_3_printf!
 
 Just type in the console:
-> man - l man_3_printf
+
+```man - l man_3_printf```
 
 This man page comes thanks to the pandoc program.
 

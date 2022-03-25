@@ -12,7 +12,10 @@ int _putchar(char c)
 }
 
 /**
+ * _putnum - function that prints a number
+ * @n: number to be printed
  *
+ * Return: void
  */
 void _putnum(int n)
 {

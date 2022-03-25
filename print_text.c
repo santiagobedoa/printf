@@ -39,8 +39,8 @@ int print_string(va_list s)
 }
 
 /**
- * reverse_str - function that reverse a string
- * @str: string to be reversed
+ * print_rev_str - function that reverse a string
+ * @args: string to be reversed
  *
  * Return: reversed string
  */
