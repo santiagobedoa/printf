@@ -87,7 +87,6 @@ This man page comes thanks to the pandoc program.
 | `printf_c`      | %c  |   Prints a character |
 | `printf_d`   | %d   |   Prints in decimal format |
 | `printf_i`      |%i  |   Prints a integer |
-| `printf_per`      | %per |   Prints in percentage format |
 | `printf_R`     | %R |   Prints in ROT13 format |
 | `printf_r`     | %r |   Prints a string in reverse |
 
