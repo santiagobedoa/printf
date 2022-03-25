@@ -90,7 +90,6 @@ This man page comes thanks to the pandoc program.
 | `printf_per`      | %per |   Prints in percentage format |
 | `printf_bin`     | %bin |   Prints in binary type |
 | `printf_o`      | %o |   Prints in octal type |
-| `printf_x`      | %x |   Prints in hexadecimal format |
 | `printf_R`     | %R |   Prints in ROT13 format |
 | `printf_r`     | %r |   Prints a string in reverse |
 
