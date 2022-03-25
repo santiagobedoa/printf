@@ -1,7 +1,7 @@
 ![plot](images/header_img.jpg)
 
 # _printf 👋
-```_printf``` is a custom implementation of the C programming function ```printf```. This project is an application of the C programming knowledge that [Holberton School](https://www.holbertonschool.com/) cohort 17 students have learned.
+Hello Devs! ```_printf``` is a custom implementation of the C programming function ```printf```. This project is an application of the C programming knowledge that [Holberton School](https://www.holbertonschool.com/) cohort 17 students have learned.
 
 **Prototype:**
 
@@ -9,7 +9,7 @@
 
 ## Examples
 
-###String
+### String
 * **Input:**
 ```
 int main (void)
@@ -20,7 +20,7 @@ int main (void)
 * **Output:**
 > Hello world!
 
-###Character
+### Character
 * **Input:**
 ```
 int main (void)
@@ -31,7 +31,7 @@ int main (void)
 * **Output:**
 > The first letter in "Hello world" is H
 
-###Integer
+### Integer
 * **Input:**
 ```
 int main (void)
@@ -42,16 +42,6 @@ int main (void)
 * **Output:**
 > There are 60 minutes in an hour
 
-###Decimal
-* **Input:**
-```
-int main (void)
-{
-	_printf("%d\n", 1000);
-}
-```
-* **Output:**
-> 1000
 
 ## How this work:
 
