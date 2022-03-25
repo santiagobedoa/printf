@@ -77,7 +77,9 @@ This man page comes thanks to the pandoc program.
 - [x] Create a man page for your function.
 
 ## Advanced Tasks
-**PENDIENTE**
+
+- [x] Prints the reversed string
+- [x] Prints the rot 13rd string
 
 ## Table of functions, symbols and description:
 
